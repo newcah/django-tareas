@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<main class="container py-5">
+    <section class="card card-body">
+        <h1 class="display-1 text-center">Recordatorio de Tareas</h1>
+        <p>Esta sencilla aplicación está desarrollada con Django (Framework de Python).
+            El usuario, previo registrarse puede administrar un diario de recordatorios de tareas por hacer, llevar un control de tareas terminadas y tareas pendientes con fecha y hora de las mismas. Como así también tiene la posibilidad de borrar tareas o modificar tareas agendadas. Tiene la opción de agendar tareas como importantes según el contenido de la misma. Es menester registrarse para así tener privacidad de su recordatorio. Solo el  ususario registrado con su nombre y contraseña puede acceder a su agenda. Por seguridad y privacidad ningún otro usuario puede ingresar a ver su recordatorio de tareas.</p>
+
+        <div class="text-center">
+            <a class="btn btn-secondary" href="/signin/">
+                Entrar
+            </a>
+            <a class="btn btn-dark" href="/signup/">
+                Registrarse
+            </a>
+        </div>
+        
+    </section>
+</main>
+{% endblock %}
+
